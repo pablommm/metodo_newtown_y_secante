@@ -1,3 +1,6 @@
+import time, os
+
+os.system('cls')
 xn = 4
 n = 0
 dif  = 1000000
@@ -12,6 +15,12 @@ def f1(x):
 def newton(x):
     return x - (f(x)/f1(x))
 
+print("\n-------------------------------------------------------------------------------------------------------\n")
+print("STARTING:....................\n")
+print("xn :", xn)
+print("dif: undefined")
+print("n  :", n, "\n")
+
 while (dif > epsilon):
     xn = newton(xn)
     dif = abs(xn - newton(xn))
@@ -19,6 +28,7 @@ while (dif > epsilon):
     print("xn :", xn)
     print("dif:", dif)
     print("n  :", n, "\n")
+    time.sleep(1)
 
-print("---------------------------------\nresult:")
-print(xn)
+print("\n-------------------------------------------------------------------------------------------------------\n\nRESULT: ", xn)
+print("\n-------------------------------------------------------------------------------------------------------\n")
