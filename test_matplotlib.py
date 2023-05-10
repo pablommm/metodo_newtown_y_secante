@@ -14,7 +14,7 @@ plt.plot(x, y)
 # Agrega etiquetas a los ejes y título
 plt.xlabel('x')
 plt.ylabel('y')
-plt.title('Gráfico de la función seno')
+#plt.title('Gráfico de la función')
 
 # Muestra la gráfica
 plt.show()
